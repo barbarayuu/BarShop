@@ -1,0 +1,188 @@
+/* details.html */
+#proitem{
+    float: left;
+    width: 312px; 
+	height: 560px;
+	display:inline;
+}
+#proitem .jqzoomWrap {
+    border: 1px solid #BBBBBB;
+    cursor: pointer;
+    float: left;
+    padding: 0;
+    position: relative;
+}
+#proitem span {
+    clear: both;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    width: 320px;
+}
+#proitem ul.imgList{
+	height: 80px;
+}
+#proitem ul.imgList .hide{
+	display:none;
+}
+#proitem ul.imgList li { 
+	float:left;
+	margin-right:10px;  
+	list-style-type:none;
+}
+#proitem ul.imgList li img { 
+	width:60px; 
+	height:60px; 
+	padding:1px;
+	background:#EEE;
+	cursor:pointer; 
+}
+#proitem ul.imgList li img:hover { 
+	padding:1px; 
+	background:#999; 
+}
+.tab{ 
+	clear:both;
+    float: left;
+    height: 230px;
+    overflow: hidden;
+    width: 310px;
+}
+.tab .tab_menu { 
+	clear:both;
+}
+.tab .tab_menu li { 
+	float:left; 
+	text-align:center; 
+	cursor:pointer; 
+	list-style:none; 
+	padding:1px 6px; 
+	margin-right:4px; 
+	background:#F1F1F1;
+	border:1px solid #898989; 
+	border-bottom:none;
+	font-size:13px;
+}
+.tab .tab_menu li.hover { 
+	background:#DFDFDF;
+}
+.tab .tab_menu li.selected { 
+	color:#FFF; 
+	background:#6D84B4;
+}
+.tab .tab_box { 
+	clear:both; 
+	border:1px solid #898989;
+	font-size:13px;
+}
+.tab .hide{
+	display:none
+}
+
+#details {
+    float: left;
+	display:inline;
+    overflow: hidden;
+    width: 468px;
+}
+#details .proDetail{
+	padding:0 10px 10px 10px;
+}
+#details .proDetailList li{
+	line-height:25px;
+	float:left;
+	width:100%;
+	font-size:12px;
+}
+#details .proDetailList strong.del {
+    color: #404040;
+    font-size: 12px;
+    position: static;
+    text-decoration: line-through;
+}
+#details .proDetailList strong {
+	font-weight:400;
+}
+#details .proDetailList .tbDetailPrice strong {
+    font-weight: 700;
+    color: #FF5500;
+    font: 24px Tahoma,Arial,Helvetica,sans-serif;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+#details .proDetailList .color_change li , #details .proDetailList .pro_size li{ 
+	float:left; 
+	margin-right:10px; 
+	width:40px;
+	list-style-type:none;
+}
+#details .proDetailList .color_change img { 
+	width:30px; 
+	height:30px; 
+	padding:1px; 
+	background:#EEE;
+	border:1px solid #BBB;
+	cursor:pointer; 
+}
+#details .proDetailList .color_change img:hover,#details .proDetailList .color_change img.hover { 
+	border:1px solid #f60;
+}
+#details .proDetailList .pro_size li{
+	margin-right:6px;
+	border:1px solid #AAA;
+	cursor:pointer; 
+	width:30px; 
+	height:30px; 
+	line-height:30px; 
+	overflow:hidden;
+	text-align:center;
+}
+#details .proDetailList .pro_size li.cur{
+	border:1px solid #AAA;
+	background-color:#f60;
+}
+/* rating css */
+.rating{
+	width:80px;
+	height:16px;
+	margin:0 0 20px 0;
+	padding:0;
+	list-style:none;
+	clear:both;
+	position:relative;
+	background: url(../images/star-matrix.gif) no-repeat 0 0;
+}
+ul.rating li {
+	cursor: pointer;
+	float:left;
+	text-indent:-999em;/*缩进到看不到*/
+}
+ul.rating li a {
+	position:absolute;/*相对于.rating绝对定位*/
+	left:0;
+	top:0;
+	width:16px;
+	height:16px;
+	text-decoration:none;
+    z-index: 200;/*此属性参数值越大,则被层叠在最上面*/
+}
+/*定位a元素*/
+ul.rating li.one a {left:0}
+ul.rating li.two a {left:16px;}
+ul.rating li.three a {left:32px;}
+ul.rating li.four a {left:48px;}
+ul.rating li.five a {left:64px;}
+ul.rating li a:hover {
+	width:80px;
+	height:16px;
+	overflow:hidden;
+	left:0;	
+	background: url(../images/star-matrix.gif) no-repeat 0 0
+}
+/*定位a元素的背景图像*/
+ul.rating li.one a:hover {background-position:0 -96px;}
+ul.rating li.two a:hover {background-position:0 -112px;}
+ul.rating li.three a:hover {background-position:0 -128px}
+ul.rating li.four a:hover {background-position:0 -144px}
+ul.rating li.five a:hover {background-position:0 -160px}
